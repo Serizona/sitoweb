@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useLanguage } from "@/components/LanguageContext";
 import { HeaderNav } from "@/components/HeaderNav";
+import ModelViewer from "@/components/ModelViewer";
 
 export function HomePageContent() {
   const { dict } = useLanguage();
@@ -45,17 +46,13 @@ export function HomePageContent() {
             </div>
             <div className="flex flex-col items-center justify-center text-center">
               <div className="relative w-full max-w-[720px]">
-                <model-viewer
-                  suppressHydrationWarning
+                <ModelViewer
                   src="/models/logo3d.glb"
-                  auto-rotate
-                  autoplay
-                  exposure="1.1"
-                  shadow-intensity="0.5"
-                  environment-image="neutral"
-                  interaction-prompt="none"
-                  disable-default-environment
-                  style={{ width: "120%", height: "460px", background: "transparent" }}
+                  autoRotate={true}
+                  cameraControls={true}
+                  shadowIntensity="1"
+                  suppressHydrationWarning={true}
+                  className="relative w-full max-w-[720px]"
                 />
               </div>
             </div>
