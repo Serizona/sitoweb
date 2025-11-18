@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description: "Find documentation or reach the IntusAI team for tailored help.",
 };
 
+
 export default function SupportPage() {
   return <SupportPageContent />;
 }
