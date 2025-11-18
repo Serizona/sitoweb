@@ -14,7 +14,6 @@
     "jsx": "react-jsx",
     "incremental": true,
     "typeRoots": ["./types", "./node_modules/@types"],
-    "types": ["./global"],
     "plugins": [
       {
         "name": "next"
@@ -31,7 +30,8 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts",
-    "types/**/*.d.ts"
+    "types/**/*.d.ts",
+    "global.d.ts"
   ],
   "exclude": ["node_modules"]
 }
