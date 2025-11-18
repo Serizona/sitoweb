@@ -83,11 +83,11 @@ export const translations = {
       },
       ircad: {
         badge: "Dataset",
-        title: "Built on trusted data sources",
+        title: "Built on trusted academic data sources",
         description:
-          "A portion of our training data originates from IRCAD public dataset. On top of that, we share a ViC-labeled subset (10 cases) so teams can compare our automatic structures with their own segmentations or annotation guidelines.",
-        downloadCta: "Download ViC segmentated dataset",
-      
+          "A portion of our training data originates from IRCAD. On top of that, we share a ViC-labeled subset (10 cases) so teams can compare our automatic structures with their own segmentations or annotation guidelines.",
+        downloadCta: "Download ViC dataset",
+        disclaimer: "Please review IRCAD license terms before downloading. IntusAI shares ViC labels under collaboration agreements.",
       },
       collab: {
         badge: "Clinical & engineering",
@@ -239,7 +239,7 @@ export const translations = {
         description:
           "Parte dei nostri dati di training proviene da IRCAD. In più condividiamo un sottoinsieme etichettato da ViC (10 casi) per permettere ai team di confrontare le nostre strutture automatiche con le proprie segmentazioni o linee guida.",
         downloadCta: "Scarica il dataset segmentato da ViC",
-        
+        disclaimer: "Controlla i termini di licenza IRCAD prima del download. Le etichette ViC sono condivise tramite accordi di collaborazione.",
       },
       collab: {
         badge: "Clinico & ingegneristico",
