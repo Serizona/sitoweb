@@ -240,7 +240,7 @@ const productCopy = {
   },
 } as const;
 
-type ProductCopy = typeof productCopy.en;
+type ProductCopy = (typeof productCopy)[keyof typeof productCopy];
 
 export function ProductPageContent() {
   const { lang } = useLanguage();
