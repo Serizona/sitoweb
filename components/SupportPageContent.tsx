@@ -41,8 +41,16 @@ export function SupportPageContent() {
     <div className="min-h-screen bg-white text-slate-900">
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-3">
-            <Image src="/logo.png" alt="IntusAI" width={140} height={60} className="h-10 w-auto drop-shadow-sm" priority />
+          <a href="/" className="flex items-center gap-1">
+            <Image
+              src="/logo.png"
+              alt="IntusAI"
+              width={240}
+              height={100}
+              quality={100}
+              priority
+              className="h-12 w-auto drop-shadow-sm"
+            />
             <span className="font-semibold tracking-wide">IntusAI</span>
           </a>
           <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -61,10 +69,7 @@ export function SupportPageContent() {
           </nav>
           <div className="hidden sm:flex items-center gap-3">
             <LanguageSwitcher />
-            <a
-              href="mailto:info@intusai.com"
-              className="rounded-full bg-blue-700 text-white px-4 py-2 text-sm hover:bg-blue-800"
-            >
+            <a href="/support#contact" className="rounded-full bg-blue-700 text-white px-4 py-2 text-sm hover:bg-blue-800">
               {nav.emailSupport}
             </a>
           </div>
@@ -87,8 +92,19 @@ export function SupportPageContent() {
           {[t.cards.manual, t.cards.contact].map((card, idx) => (
             <div key={card.title} className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
               <div className="flex items-center gap-3">
-                <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-50 text-blue-700 text-lg font-semibold">
-                  {idx === 0 ? "📘" : "✉️"}
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white shadow-inner">
+                  {idx === 0 ? (
+                    <svg viewBox="0 0 32 32" className="h-6 w-6 text-slate-900" fill="none" stroke="currentColor" strokeWidth="1.3">
+                      <rect x="7" y="6" width="18" height="20" rx="2.5" />
+                      <path d="M7 11h18" />
+                      <path d="M12 6v20" />
+                    </svg>
+                  ) : (
+                    <svg viewBox="0 0 32 32" className="h-6 w-6 text-slate-900" fill="none" stroke="currentColor" strokeWidth="1.3">
+                      <rect x="5" y="7" width="22" height="16" rx="3" />
+                      <path d="M5 10.5 16 18l11-7.5" />
+                    </svg>
+                  )}
                 </div>
                 <h2 className="text-2xl font-semibold">{card.title}</h2>
               </div>

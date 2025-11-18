@@ -30,8 +30,16 @@ export function HeaderNav({ active, cta }: HeaderNavProps) {
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
       <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3">
-          <Image src="/logo.png" alt="IntusAI" width={140} height={60} className="h-10 w-auto drop-shadow-sm" priority />
+        <Link href="/" className="flex items-center gap-1">
+          <Image
+            src="/logo.png"
+            alt="IntusAI"
+            width={240}
+            height={100}
+            quality={100}
+            priority
+            className="h-12 w-auto drop-shadow-sm"
+          />
           <span className="font-semibold tracking-wide">IntusAI</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -55,9 +63,13 @@ export function HeaderNav({ active, cta }: HeaderNavProps) {
               {nav[cta.labelKey]}
             </Link>
           )}
+          {!cta && (
+            <Link href="/support#contact" className="rounded-full bg-blue-700 text-white px-4 py-2 text-sm hover:bg-blue-800">
+              {nav.emailSupport}
+            </Link>
+          )}
         </div>
       </div>
     </header>
   );
 }
-

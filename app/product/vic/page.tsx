@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import { ProductPageContent } from "@/components/ProductPageContent";
 
 export const metadata: Metadata = {

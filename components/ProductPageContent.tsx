@@ -344,7 +344,15 @@ export function ProductPageContent() {
           </div>
         </div>
         <div className="pointer-events-none absolute right-[8vw] top-[2.5vh] hidden lg:block z-10">
-          <Image src="/vic_logo.png" alt="VirtualClone (ViC) logo" width={120} height={50} className="h-[72px] w-auto opacity-95" />
+          <Image
+            src="/vic_logo.png"
+            alt="VirtualClone (ViC) logo"
+            width={320}
+            height={140}
+            quality={100}
+            priority
+            className="w-auto opacity-95"
+          />
         </div>
         <div className="absolute right-0 top-[3vh] w-[62vw] h-[92vh] md:w-[64vw] md:h-[110vh] z-0">
           <model-viewer

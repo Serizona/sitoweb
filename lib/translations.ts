@@ -83,9 +83,9 @@ export const translations = {
       },
       ircad: {
         badge: "Dataset",
-        title: "Built on trusted academic data sources",
+        title: "Built on trusted data sources",
         description:
-          "A portion of our training data originates from IRCAD. On top of that, we share a ViC-labeled subset (10 cases) so teams can compare our automatic structures with their own segmentations or annotation guidelines.",
+          "A portion of our training data originates from IRCAD public dataset. On top of that, we share a ViC-labeled subset (10 cases) so teams can compare our automatic structures with their own segmentations or annotation guidelines.",
         downloadCta: "Download ViC segmentated dataset",
       
       },
